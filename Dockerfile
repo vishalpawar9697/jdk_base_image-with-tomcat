@@ -14,11 +14,11 @@ ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 ENV PATH $JAVA_HOME/bin:$PATH
 
 # Download and install Apache Tomcat
-ENV TOMCAT_VERSION 9.0.80
-RUN wget https://downloads.apache.org/tomcat/tomcat-9/v${9.0.80}/bin/apache-tomcat-${9.0.80}.tar.gz && \
-    tar -xzf apache-tomcat-${9.0.80}.tar.gz && \
-    mv apache-tomcat-${9.0.80} /usr/local/tomcat && \
-    rm apache-tomcat-${9.0.80}.tar.gz
+ENV TOMCAT_VERSION 9.0.97
+RUN wget https://downloads.apache.org/tomcat/tomcat-9/v${9.0.97}/bin/apache-tomcat-${9.0.97}.tar.gz && \
+    tar -xzf apache-tomcat-${9.0.97}.tar.gz && \
+    mv apache-tomcat-${9.0.97} /usr/local/tomcat && \
+    rm apache-tomcat-${9.0.97}.tar.gz
 
 # Set environment variables for Tomcat
 ENV CATALINA_HOME /usr/local/tomcat
